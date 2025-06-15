@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pomodoro Timer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="timer-container">
+    <button id="theme-toggle">🌙 Dark Mode</button>
+    <h1>Pomodoro Timer</h1>
+
+    <h2>🕒 Customize Your Focus Time</h2>
+    <label for="custom-minutes">Set Minutes:</label>
+    <input type="number" id="custom-minutes" min="1" max="120" value="25" />
+
+    <div id="timer">25:00</div>
+    <div class="buttons">
+      <button onclick="startTimer()">Start</button>
+      <button onclick="resetTimer()">Reset</button>
+    </div>
+    <audio id="beep" src="beep.mp3" preload="auto"></audio>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

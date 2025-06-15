@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  transition: background 0.5s, color 0.5s;
+}
+
+.timer-container {
+  text-align: center;
+  padding: 40px;
+  border-radius: 20px;
+  max-width: 400px;
+  margin: 100px auto;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+/* Dark theme (default) */
+body.dark {
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  color: white;
+}
+
+body.dark .timer-container {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Light theme */
+body.light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+body.light .timer-container {
+  background: white;
+}
+
+/* Timer text */
+#timer {
+  font-size: 5rem;
+  margin: 20px 0;
+}
+
+/* Buttons */
+.buttons button, #theme-toggle {
+  padding: 10px 25px;
+  margin: 10px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #ffffff;
+  color: #0f2027;
+  transition: 0.3s;
+}
+
+.buttons button:hover, #theme-toggle:hover {
+  transform: scale(1.1);
+  background: #f0f0f0;
+}
+
+#custom-minutes {
+  font-size: 1.2rem;
+  padding: 8px;
+  width: 80px;
+  border-radius: 8px;
+  border: none;
+  margin: 10px;
+  text-align: center;
+}
